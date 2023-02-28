@@ -6,7 +6,7 @@ let cast_button = document.getElementById("cast");
 let hr = 00;
 let min = 00;
 let sec = 00;
-let milisec = 00;
+let milisec = 000;
 
 start_button.addEventListener("click", function() {
     count_down = true;
@@ -27,7 +27,7 @@ reset_button.addEventListener("click", function() {
     document.getElementById("hour").innerHTML= "00";
     document.getElementById("minutes").innerHTML= "00";
     document.getElementById("seconds").innerHTML= "00";
-    document.getElementById("millisec").innerHTML= "00";
+    document.getElementById("millisec").innerHTML= "000";
 })
 
 
@@ -78,5 +78,6 @@ function run() {
 }
 cast_button.addEventListener("click", function() {
     count_down  = false;
+    
     document.getElementById("casting").innerHTML= "Cast1: "+ hrString + minString + secString + milisecString;
 });
